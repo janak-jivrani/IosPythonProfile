@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="epsilonhardware" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TyE-qH-1hh">
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nYR-Ri-9eo">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="48"/>
+                                <color key="backgroundColor" name="Status_color"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="Status_color"/>
+                        <constraints>
+                            <constraint firstItem="TyE-qH-1hh" firstAttribute="top" secondItem="nYR-Ri-9eo" secondAttribute="bottom" id="Uw4-b0-cNe"/>
+                            <constraint firstAttribute="trailing" secondItem="nYR-Ri-9eo" secondAttribute="trailing" id="XT1-Rn-i6y"/>
+                            <constraint firstItem="TyE-qH-1hh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fSL-er-DwU"/>
+                            <constraint firstItem="TyE-qH-1hh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fy0-sE-ezS"/>
+                            <constraint firstItem="nYR-Ri-9eo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gkf-XL-Dy3"/>
+                            <constraint firstItem="nYR-Ri-9eo" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="iKi-a2-35M"/>
+                            <constraint firstItem="TyE-qH-1hh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="tpa-Kp-JIP"/>
+                            <constraint firstItem="TyE-qH-1hh" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="vpt-qC-yK7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="TyE-qH-1hh" id="d17-dU-Wxd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="91.741071428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Status_color">
+            <color red="0.23921568627450979" green="0.86274509803921573" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
